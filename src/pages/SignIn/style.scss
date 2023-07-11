@@ -1,0 +1,110 @@
+@import '../../variables.scss';
+.login{
+     display: flex;
+     justify-content: center;
+     width: 100vw; 
+     min-height: 100vh;
+
+     .left-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 55%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), $red-color;
+        background-size: cover;
+        background-repeat: no-repeat;
+        div{
+            display: flex;
+            flex-direction: column;
+            align-self: flex-start;
+            margin-left: 17rem;
+            gap:1.3rem ;
+        }
+        h1{
+            color: $white-color;
+            font-size: clamp(2rem, 1.6rem + 3vw, 4rem);
+            text-align: center;
+            
+        }
+        p{
+            color: $white-color;
+            font-size: 1.6rem;
+        }   
+     }
+
+     .right-container{
+        display: flex;
+        width: 45%;
+        align-items: center;
+        justify-content: center;
+        background:  $black-color; 
+        p{
+            margin-bottom: 4rem;
+        }
+       .login-content{
+            padding: 5rem 3rem;        
+            border-radius: 3rem;
+            background-color: rgba(255, 255, 255, 0.11);
+            opacity: 0.8;
+            backdrop-filter: blur(40px);
+            
+                h2{
+                    font-size: 2.6rem;
+                    color: $white-color;
+                }
+                p{
+                    font-size: 1.5rem;
+                    color: $white-color;
+                }
+            
+            form{    
+                .input-container{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.6rem;
+                    position: relative;
+                    input{
+                        width: 30.7rem;
+                        background: red;
+                        padding: 1.8rem 2.6rem;
+                        border: 1px solid  #eeeeee;
+                        border-radius: 3rem;
+                        background: $white-color;
+                        padding-left: 4rem;
+                        &::placeholder{
+                            color: #eeeeee;
+                        }                       
+                    }
+
+                    .input-icon-email{
+                        position: absolute;
+                        color: #eeeeee;
+                        top: 1.6rem;
+                        left: 1rem; 
+                        font-size: 2rem; 
+                    }
+                    .input-icon-pw{
+                        position: absolute;
+                        color: #eeeeee;
+                        top: 8.5rem;
+                        left: 1rem;
+                        font-size: 2rem;  
+                    }
+                }
+                
+                button{
+                    width: 30.7rem;
+                    padding: 1.8rem 2.6rem;
+                    background: $red-color;
+                    border: none;
+
+                }
+
+                p{
+                    text-align: center;
+                }
+            }
+        }
+     }
+}
